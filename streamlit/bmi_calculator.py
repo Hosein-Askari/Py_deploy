@@ -12,7 +12,7 @@ if w != 0 and h != 0:
     
     if result<18.5 :
         st.warning(result)
-        img=Image.open("bmi_img/1.PNG")
+        img=Image.open("streamlit/bmi_img/1.PNG")
         st.image(img)
 
     elif 18.5<=result<25 :
