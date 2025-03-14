@@ -16,7 +16,7 @@ It's so simple! Just type your city in the search bar, then click the search but
 
 <br>
 
-
+![weather_app](https://github.com/user-attachments/assets/7dc9fdee-25f9-4ea6-8767-bf51cb0ad5e0)
 
 
 
