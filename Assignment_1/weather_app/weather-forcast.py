@@ -49,7 +49,9 @@ class  MainWindow(QMainWindow):
         shortcut = QShortcut(QKeySequence("Return"), self)
         shortcut.activated.connect(self.ui.pushButton.click)
 
-        
+        BASE_DIR = Path(__file__).resolve().parent  
+
+        self.images_path = BASE_DIR / "images"
 
 
 
@@ -108,7 +110,7 @@ class  MainWindow(QMainWindow):
         html_text = f"""
     <div style="display: flex; align-items: left;">
         <!-- تصویر در سمت چپ -->
-<img src="D:/python/python-deploy/weather_app/images/{condition}.png" width="100" height="100" style="margin-right: 10px;"></div>
+<img src="{self.images_path}/{condition}.png" width="100" height="100" style="margin-right: 10px;"></div>
 """
 
         self.ui.label.setText(html_text)
